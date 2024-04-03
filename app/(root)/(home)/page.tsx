@@ -1,5 +1,5 @@
 const page = () => {
-  return <div>MAIN HOME PAGE</div>;
+  return <div className="sticky   bg-gray-50 ">IDK THIS PAGES</div>;
 };
 
 export default page;

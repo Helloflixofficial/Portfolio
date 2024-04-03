@@ -2,6 +2,7 @@ import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import { Sidebar } from "@/components/Sidebar";
 import { ReactNode } from "react";
+import "@/app/globals.css";
 export const HomeLayout = ({ children }: { children: ReactNode }) => {
   return (
     <main className="relative">

@@ -74,3 +74,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+
+.sidebar {
+  @apply max-h-28 overflow-hidden transition-[var(--transition-2)] mb-[15px];
+}
