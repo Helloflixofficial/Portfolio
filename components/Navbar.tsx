@@ -1,5 +1,9 @@
+import { Nav } from "./nav";
+
 export const Navbar = () => {
   return (
-    <div>navbar</div>
-  )
-}
+    <aside>
+      <Nav />
+    </aside>
+  );
+};

@@ -75,7 +75,13 @@
   }
 }
 
-
 .sidebar {
   @apply max-h-28 overflow-hidden transition-[var(--transition-2)] mb-[15px];
 }
+
+.rounded-custom {
+  @apply rounded-lg;
+  border-radius: 20%;
+}
+
+
