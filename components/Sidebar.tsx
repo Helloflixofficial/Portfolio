@@ -2,7 +2,8 @@ import Image from "next/image";
 import me from "@/app/Images/me.jpeg";
 export const Sidebar = () => {
   return (
-    <div className="bg-eerie-black-2 border border-jet rounded-lg p-4 shadow-z-1 z-10">
+    
+    <div className="bg-eerie-black-2 border border-jet rounded-lg p-4  shadow-z-1 z-10">
       <div className="relative flex items-center justify-start gap-4  rounded-custom">
         <figure className="bg-gradient-to-br from-gray-900 to-black">
           <Image

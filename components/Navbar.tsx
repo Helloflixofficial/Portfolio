@@ -2,8 +2,8 @@ import { Nav } from "./nav";
 
 export const Navbar = () => {
   return (
-    <aside>
+    <div>
       <Nav />
-    </aside>
+    </div>
   );
 };
