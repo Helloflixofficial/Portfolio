@@ -1,5 +1,9 @@
-const page = () => {
-  return <div className="sticky   bg-gray-50 ">IDK THIS PAGES</div>;
+const Home = () => {
+  return (
+    <section>
+      <div className="bg-[#DC6B19]">hello sire</div>
+    </section>
+  );
 };
 
-export default page;
+export default Home;
