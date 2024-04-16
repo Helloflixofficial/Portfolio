@@ -1,5 +1,5 @@
 export const Footer = () => {
-  return <div className="bg-blue-500">
+  return <div className="bg-[#A79277] border sticky left-0 top-0 justify-between overflow-y-auto border-r">
   <div className="md:bg-green-500">
     <div className="sm:bg-red-500"> 
       <div className="lg:bg-yellow-500"> 

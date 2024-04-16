@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 const RootLayout = ({ children }: Readonly<{ children: ReactNode }>) => {
   return (
-    <main className="bg-[#DC6B19]">
+    <main>
       <div>{children}</div>
     </main>
   );
