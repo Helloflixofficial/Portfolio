@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { navItems } from "./Nav";
 import th from "@/app/Images/birds.png";
+import Theme from "./Theme";
 
 export const Navbar = () => {
   const pathname = usePathname();
@@ -25,10 +26,17 @@ export const Navbar = () => {
               BOBY<span className="text-yellow-500">Sharmaji</span>
             </p>
           </Link>
-         <div> <p>GLOBLE SEARCH</p></div>
+          <div>
+            <p>GLOBLE SEARCH</p>
+          </div>
+          <div className="flex-between gap-5 ">
+            <Theme/>
+            {/* <sign></sign> */}
+            {/* Navigation bar  */}
+          </div>
           <ul className="flex flex-col lg:flex-row list-none lg:ml-auto items-center">
             <li className="inline-block relative">
-              <a className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold">
+              <a className="lg:text-black lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold">
                 {navItems.map((links) => {
                   const isActive =
                     pathname === links.route ||
