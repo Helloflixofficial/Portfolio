@@ -31,17 +31,17 @@ const Theme = () => {
           )}
         </MenubarTrigger>
         <MenubarContent className="absolute right-[-3rem] mt-3 min-w-[120px]  rounded border py-2  dark:border-dark-400 dark:bg-dark-300">
-          {themes.map((data)=> (
-            <MenubarItem />
+          {themes.map((item) => (
+            <MenubarItem>
+              <Image
+                src={item.icons}
+                alt={item.value}
+                height={16}
+                width={16}
+                className={`${mode === item.value && "Active-theme"}`}
+              />
+            </MenubarItem>
           ))}
-          <MenubarItem>
-            News <MenubarShortcut>T</MenubarShortcut>
-          </MenubarItem>
-          <MenubarItem>Treanding <MenubarShortcut>T</MenubarShortcut> </MenubarItem>
-          <MenubarSeparator />
-          <MenubarItem>Share <MenubarShortcut>T</MenubarShortcut></MenubarItem>
-          <MenubarSeparator />
-          <MenubarItem>Print <MenubarShortcut>T</MenubarShortcut></MenubarItem>
         </MenubarContent>
       </MenubarMenu>
     </Menubar>

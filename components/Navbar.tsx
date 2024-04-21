@@ -4,8 +4,8 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { navItems } from "./Nav";
-import th from "@/app/Images/birds.png";
+import { Menu, navItems } from "./Nav";
+import th from "@/app/Images/Screenshot 2024-04-20 203141.png";
 import Theme from "./Theme";
 
 export const Navbar = () => {
@@ -19,20 +19,16 @@ export const Navbar = () => {
               className="rounded-custom"
               src={th}
               alt="GitHub Avatar"
-              width={100}
-              height={100}
+              width={180}
+              height={150}
             />
-            <p className="text-lg font-bold font-sans text-dark-100 darl:text-light900 max-sm:hidden">
-              BOBY<span className="text-yellow-500">Sharmaji</span>
-            </p>
           </Link>
+          <div className="flex-between gap-5 flex">
+            <Menu/>
+            <Theme/>
+          </div>
           <div>
             <p>GLOBLE SEARCH</p>
-          </div>
-          <div className="flex-between gap-5 ">
-            <Theme/>
-            {/* <sign></sign> */}
-            {/* Navigation bar  */}
           </div>
           <ul className="flex flex-col lg:flex-row list-none lg:ml-auto items-center">
             <li className="inline-block relative">
