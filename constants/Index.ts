@@ -1,8 +1,8 @@
-import { SidebarLink } from "@/types/Index";
+import { SidebarLink } from "@/types/index";
 export const themes = [
-  { value: "light", label: "light", icons: "/assets/443.jpg" },
-  { value: "dark", label: "dark", icons: "/assets/next.svg" },
-  { value: "system", label: "system", icons: "/assets/next.svg" },
+  { value: "Light", label: "Light", icons: "/assets/443.jpg" },
+  { value: "Dark", label: "Dark", icons: "/assets/next.svg" },
+  { value: "System", label: "System", icons: "/assets/next.svg" },
 ];
 
 export const sidebarLinks: SidebarLink[] = [
