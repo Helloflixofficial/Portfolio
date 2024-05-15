@@ -1,7 +1,6 @@
 "use client";
 import an from "@/app/Images/th.jpeg";
-// import { useTheme } from "@/constants/ThemeProvider";
-import { useTheme } from "next-themes";
+import { useTheme } from "@/constants/ThemeProvider";
 import {
   Menubar,
   MenubarContent,
@@ -12,8 +11,7 @@ import {
 import Image from "next/image";
 import { themes } from "@/constants/Index";
 const Theme = () => {
-  const { mode, setMode } = useTheme();
-
+  const [mode, setMode] = useTheme();
   return (
     <Menubar className="relative border-none shadow-none bg-transparent">
       <MenubarMenu>
